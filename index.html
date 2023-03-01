@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"> </script>
+    <title>Chronomètre</title>
+</head>
+<body class="body1">
+    
+    <div class="chronometre">
+        <div class="ecran">
+            <div id="valeurs">
+                <li><span> 0 </span> h </li> :
+                <li><span> 0 </span> min </li> :
+                <li><span> 0 </span> sec </li> :
+                <li><span> 0 </span> ms </li>
+            </div>
+        </div>
+        <div id="boutons">
+            <button id="start" onclick="toggle()"> Start / Stop </button>
+            <button id="reset" onclick="reset()"> Reset </button>
+            
+        </div>
+        <button id="theme" onclick="changeTheme()"> Theme </button>
+    </div>
+
+
+</body>
+</html>
