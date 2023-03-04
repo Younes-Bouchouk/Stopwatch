@@ -8,7 +8,7 @@ var sp = document.getElementsByTagName('span')
 var btn_start = document.getElementById('start')
 var btn_reset = document.getElementById('reset')
 var d = false
-var bg = document.getElementsByClassName('body1')
+var bg = false
 
 
 
@@ -73,7 +73,24 @@ function reset(){
 function changeTheme(){
 
 
-    bg.classList.remove('body1')
+    bg.className = "rgb(50, 50 ,50)"
 
 
+}
+
+function change() {
+
+    if (bg == false){
+        bg = true
+        colorbg = "rgb(50, 50, 50)";
+        console.log('Sombre')
+    }
+
+    else {
+        bg = false
+        colorbg = "rgb(70, 156, 255)";
+        console.log('Claire')
+    }
+
+	document.body.style.background=colorbg;
 }
