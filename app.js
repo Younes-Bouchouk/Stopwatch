@@ -2,6 +2,8 @@ var h = 0
 var min = 0
 var sec = 0
 var ms = 0
+// var ms = ms.padStart(3, '0')
+// var ms = ms.toString().padStart(3, '0');
 var i = false
 var t
 var sp = document.getElementsByTagName('span')
@@ -16,7 +18,7 @@ var bg = false
 function update_chrono() {
     ms += 1
 
-    if (ms == 10){
+    if (ms == 100){
         ms = 0
         sec += 1
     }
@@ -49,7 +51,7 @@ function toggle(){
 }
 
 function start(){
-    t = setInterval(update_chrono,100)
+    t = setInterval(update_chrono,1)
     // btn_start.disabled = false
 }
 
