@@ -18,7 +18,7 @@ var bg = false
 function update_chrono() {
     ms += 1
 
-    if (ms == 100){
+    if (ms >= 10){
         ms = 0
         sec += 1
     }
@@ -51,7 +51,7 @@ function toggle(){
 }
 
 function start(){
-    t = setInterval(update_chrono,1)
+    t = setInterval(update_chrono,100)
     // btn_start.disabled = false
 }
 
